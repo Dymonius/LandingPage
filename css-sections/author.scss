@@ -1,0 +1,31 @@
+.author {
+  background-color: $primary-color;
+  &__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+  }
+
+  &__copy-right {
+    padding-right: 20px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+
+  &__social {
+    width: 135px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.social {
+}

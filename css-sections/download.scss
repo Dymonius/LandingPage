@@ -1,0 +1,89 @@
+.download {
+  position: relative;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    max-width: 950px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__phones {
+    width: 100%;
+  }
+
+  &__right {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  &__header {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    color: $grey-color;
+    margin-bottom: 60px;
+    line-height: 24px;
+  }
+
+  &__icons {
+  }
+
+  &__google {
+  }
+
+  &__app {
+  }
+
+  &__rectangles-left {
+    display: none;
+  }
+
+  &__rectangles-right {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .download {
+    padding-bottom: 123px;
+    &__wrapper {
+      flex-direction: row;
+      align-items: start;
+    }
+    &__phones {
+      width: 50%;
+    }
+    &__right {
+      width: 50%;
+      padding-left: 50px;
+      padding-top: 110px;
+      text-align: center;
+    }
+    &__rectangles-left {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 255px;
+      bottom: -65px;
+    }
+    &__rectangles-right {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 255px;
+      bottom: -65px;
+      right: 0;
+    }
+  }
+}
+

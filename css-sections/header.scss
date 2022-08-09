@@ -1,0 +1,145 @@
+.header {
+  background: linear-gradient(#E2EFF7, #FFFFFF);
+  box-shadow: 0 4px 16px 0 #4B008142;
+
+  .menu {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .menu__logo {
+    font-size: 40px;
+    font-weight: 700;
+    color: $primary-color;
+  }
+
+  .menu__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu__item {
+    line-height: 42px;
+    font-size: 18px;
+
+    &:hover {
+      transition: 0.3s;
+      text-shadow: 1px 1px 2px #4B008142;
+    }
+  }
+
+  .menu__item--active {
+    color: $primary-color;
+  }
+
+  &__bottom-wrapper {
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__wrapper-new {
+
+  }
+
+  &__new {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  &__text {
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  &__icon-wrapper {
+  }
+
+  &__icon {
+    width: 180px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+  }
+
+  &__phones {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 441px;
+  }
+}
+
+@media (min-width: 520px) {
+  .header {
+    .menu {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu__items {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    .menu__item {
+      margin-right: 50px;
+    }
+
+    .menu__item--last {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    .menu {
+      max-width: 950px;
+      margin: auto;
+    }
+
+    &__bottom-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      max-width: 950px;
+      margin: auto;
+      margin-top: 70px;
+    }
+
+    &__icon-wrapper {
+      margin-top: 40px;
+    }
+
+    &__new {
+      margin-top: 60px;
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 70px;
+    }
+  }
+}
+
+@media (min-width: 1270px) {
+  .header {
+    padding-top: 35px;
+    padding-bottom: 78px;
+    &__phones {
+      position: relative;
+      left: 150px;
+    }
+  }
+}
+
+
+
